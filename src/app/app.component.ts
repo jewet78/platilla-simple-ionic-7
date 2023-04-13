@@ -9,14 +9,17 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule, RouterLink, RouterLinkActive, CommonModule],
 })
+/*aqui se declaran las paginas y por donde se acceden
+se usa /tab/... primero porque se se lo saco las tabs no funcionan
+no se si es optimo.
+tambien aparece que tipo de icono ira en el menu
+el icono de las tabs se ve en otro lado*/
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Noticias', url: './tabs/noticias', icon: 'newspaper' },
+    { title: 'Ubicaciones', url: './tabs/ubicaciones', icon: 'compass' },
+    { title: 'Notificaciones', url: './tabs/notificaciones', icon: 'flag' },
+    { title: 'Preguntas frecuentes', url: './tabs/preguntas-frecuentes', icon: 'help-buoy' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
