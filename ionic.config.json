@@ -1,0 +1,7 @@
+{
+  "name": "appmovi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
